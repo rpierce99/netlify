@@ -1,4 +1,4 @@
 [build]
 base="hello-world/"
-publish="hello-world/build"
+publish="build/"
 command="npm run build"
