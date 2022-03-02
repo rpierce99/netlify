@@ -36,5 +36,13 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <script src="//cdn.split.io/sdk/split-10.17.3.min.js"></script>
+    <script src="boomerang-1.0.0-debug.js"></script>
+    <script src="splitplugin.js"></script>
+    <script>
+      BOOMR.init({
+        beacon_url: "http://rpierce99.netlify.com/beacon/"
+      });
+    </script>
   </body>
 </html>
