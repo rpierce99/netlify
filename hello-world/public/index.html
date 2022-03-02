@@ -43,6 +43,19 @@
       BOOMR.init({
         beacon_url: "http://rpierce99.netlify.com/beacon/"
       });
+
+      // Instantiate the SDK. CDN will expose splitio globally 
+      var factory = splitio({ 
+        core: {
+          authorizationKey: 'o7ne4711jc1vqe7o7olei2gigb', // stolen from app.split.io
+          // key represents your internal user id, or the account id that 
+          // the user belongs to. 
+          // This coudld also be a cookie you generate for anonymous users
+          key: 'anonymous'
+        }
+      });
+      // And get the client instance you'll use
+      var client = factory.client();
     </script>
   </body>
 </html>
