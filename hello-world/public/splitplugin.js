@@ -53,7 +53,7 @@
                 //
                 // Send to Split SDK
                 //
-                splitClient.track('TRAFFIC_TYPE', 'boomr_page_load', null, eventProps);
+                window.splitClient.track('TRAFFIC_TYPE', 'boomr_page_load', null, eventProps);
             }, 0);
         }
     };
